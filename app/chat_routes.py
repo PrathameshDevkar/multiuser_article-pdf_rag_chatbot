@@ -23,9 +23,8 @@ load_dotenv()
 
 router = APIRouter()
 hf_api_key = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-SECRET_KEY = os.getenv("secrete_key")
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
-
 def get_username_from_token(token: str):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])

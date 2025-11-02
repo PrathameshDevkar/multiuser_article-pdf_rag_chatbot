@@ -9,7 +9,7 @@ Frontend built using Streamlit:
 """
 
 
-API_BASE = "add the url here"
+API_BASE = "here add the url where the backend is running"
 
 st.title("🧠 Multi-User Research RAG Chatbot")
 

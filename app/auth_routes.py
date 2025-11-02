@@ -3,11 +3,14 @@ from jose import jwt #WT (JSON Web Token) is a compact, signed token the server 
 from datetime import datetime, timedelta,timezone
 from .db import create_user, verify_user
 import os
+from dotenv import load_dotenv
 
 router = APIRouter()
 
+load_dotenv()
+
 #SECRET_KEY signs tokens; keep it secret (environment variable in production).
-SECRET_KEY = os.getenv("secrete_key")  # change in prod
+SECRET_KEY = os.getenv("SECRET_KEY")  # change in prod
 ALGORITHM = "HS256"
 
 def create_jwt(username: str):

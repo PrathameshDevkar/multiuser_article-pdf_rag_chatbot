@@ -84,6 +84,8 @@ Create a .env file or export manually:
 HUGGINGFACEHUB_API_TOKEN=<your_huggingface_token>
 secrete_key=<your_fastapi_secret_key>
 
+add the backend url in app.py
+
 5️⃣ Run the FastAPI Backend
 uvicorn main:app --reload
 
