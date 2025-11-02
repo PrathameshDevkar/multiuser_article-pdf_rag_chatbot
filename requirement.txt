@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-jose
+passlib[bcrypt]
+langchain
+langchain_community
+langchain_huggingface
+chromadb
+streamlit
+requests
+pypdf
+python-dotenv
